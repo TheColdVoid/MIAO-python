@@ -1,0 +1,4 @@
+include miaolib/static
+include miaolib/static/*
+include miaolib/static/js/*
+include miaolib/static/css/*
