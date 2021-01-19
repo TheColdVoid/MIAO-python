@@ -45,11 +45,11 @@ start()
 _（ start() 函数将在执行时阻塞，因此您需将此行代码放在您的其他代码的后面，或者开一个新的线程供本工具提供服务。）_
 
 就可以自动生成这样的临时 Demo：
-![](docs/3FCDD8DA-AA88-4780-8B0A-D2F6C0C87BBD.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/3FCDD8DA-AA88-4780-8B0A-D2F6C0C87BBD.png)
 
 输入参数后，点击「执行」即可执行，并获得返回值：
 
-![](docs/23DFA4CF-8D58-4F8B-B693-AC7117A95E1D.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/23DFA4CF-8D58-4F8B-B693-AC7117A95E1D.png)
 
 为了 MIAO 限制可传入的参数类型并完成参数的类型转换，建议您利用 Python 的 Type Hint （[PEP 484](https://www.python.org/dev/peps/pep-0484/)）对返回值进行类型标注，对于有标注类型参数，MIAO 将会将参数转换成对应的类型，如上例中所示的`def random_num(min:int,max:int):`那样。
 ### 可视化结果
@@ -88,7 +88,7 @@ def interest():
     ]
 ```
 即可生成如下的可视化结果：
-![](docs/A5DBB61F-A436-4BFE-93A8-5931DD19999E.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/A5DBB61F-A436-4BFE-93A8-5931DD19999E.png)
 
 
 或者，您也可以新建一个用于存放结果的类:
@@ -112,7 +112,7 @@ def cat_info() -> List[Cat]:
     return [c1, c2, c3]
 ```
 运行后将会得到如下的可视化结果：
-![](docs/17DDD635-7014-49FD-A48F-66903795A556.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/17DDD635-7014-49FD-A48F-66903795A556.png)
 
 （如果您希望返回对象所组成的 List 的话，您需要利用类型标注（Type Hint）来指明函数的返回值类型，以供 MIAO 识别并展示表头。如上例中函数返回值类型标注`-> List[Cat]`）
 
@@ -124,7 +124,7 @@ def voice():
     return ["喵", "汪", "嗷"]
 ```
 可以生成如下的结果：
-![](docs/82C92F9A-041F-43DA-ABDF-E5C2E058604A.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/82C92F9A-041F-43DA-ABDF-E5C2E058604A.png)
 
 
 为了 MIAO 能够在您的函数返回空结果时仍能正确显示表头，建议您利用类型标注（Type Hint）对返回值类型进行标注，如：
@@ -149,7 +149,7 @@ def interest() -> List[InterestTable]:
     # return some cat's interest dict here
 ```
 这样当返回空表时，表头也将会被正确地显示：
-![](docs/2E5709D1-A1F0-47A5-B8FF-AF004A858157.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/2E5709D1-A1F0-47A5-B8FF-AF004A858157.png)
 
 您也可以选择手动指定表头中的列名：
 ``` python
@@ -158,7 +158,7 @@ def interest() :
     # return some cat's interest dict here
 ```
 这个功能也一样可以被用来限制或筛选表格中要被显示的列：
-![](docs/5DBCD7A9-DF9B-47F2-84CB-DF19E8A6C6C0.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/5DBCD7A9-DF9B-47F2-84CB-DF19E8A6C6C0.png)
 
 
 ### 其他定制项
@@ -168,13 +168,13 @@ def interest() :
 def func1(a: int, b: int):
     return a + b
 ```
-![](docs/7C889BDC-8132-4431-95B3-0F038DF30A32.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/7C889BDC-8132-4431-95B3-0F038DF30A32.png)
 
 上方的标题也可以通过参数来进行修改：Cat Ear Switch Controller
 ``` python
 start("Cat Ear Switch Controller")
 ```
-![](docs/AC8F260D-D96A-41E3-8D34-2E0D9DDD9269.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/AC8F260D-D96A-41E3-8D34-2E0D9DDD9269.png)
 
 将来会增加更多的定制项（例如参数的选择方式、配色等等）
 
@@ -199,17 +199,17 @@ MIAO 并不是一个Web框架，其关注点与Web框架有着很大差异，两
 示例演示了一些可能的使用场景，<br>
 如果您有更好的使用示例，欢迎提 PR 或直接联系我，我将会将其加入本章节，谢谢。
 ### 使用场景示例（Java 版）：依赖格式 Maven 转 Gradle
-![](docs/02403AF1-681C-40F2-AC9A-B2D7026F9C32.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/02403AF1-681C-40F2-AC9A-B2D7026F9C32.png)
 [代码链接](https://github.com/TheColdVoid/MIAO-example/tree/master/java)
 Demo 链接
 ### 使用场景示例（Python 版）：小工具合集
-![](docs/44D4574C-3DAD-4D8A-94B2-CBB10BA6B60E.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/44D4574C-3DAD-4D8A-94B2-CBB10BA6B60E.png)
 [代码链接](https://github.com/TheColdVoid/MIAO-example/blob/master/python/example_tool.py)
 ### 使用场景示例（Python 版）：学术成果展示
-![](docs/42727D94-5BA0-4FE5-B723-D5A284B19FD6.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/42727D94-5BA0-4FE5-B723-D5A284B19FD6.png)
 [代码链接](https://github.com/TheColdVoid/MIAO-example/blob/master/python/example_academic.py)
 ### 使用场景示例（Python 版）：物联网
-![](docs/46B0AAF5-FB21-40E9-AF6A-E94E94C06F7A.png)
+![](https://asd90s0s-1254257014.cos.ap-beijing.myqcloud.com/46B0AAF5-FB21-40E9-AF6A-E94E94C06F7A.png)
 [代码链接](https://github.com/TheColdVoid/MIAO-example/blob/master/python/example_respi.py)
 
 ## 规划路线图
